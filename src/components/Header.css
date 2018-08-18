@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'IBM Plex Mono', monospace;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  justify-content: space-around;
+  height: 3rem;
+}
+
+.header__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header__list-item {
+  margin-right: 2rem;
+}
+
+.header__list-item > a {
+  text-decoration: none;
+}
+
+.header__list-item:last-child {
+  margin-right: 0;
+}
+
+/* TODO: move to index.css */
+.content {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 650px;
+  min-height: calc(100vh - 9rem);
+}
+
+/* TODO: move to footer.css */
+footer {
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  justify-content: space-around;
+  height: 3rem;
+}
+
+.footer__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__list-item {
+  margin-right: 2rem;
+}
+
+.footer__list-item > a {
+  text-decoration: none;
+}
+
+.footer__list-item:last-child {
+  margin-right: 0;
+}
