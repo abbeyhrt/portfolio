@@ -1,4 +1,5 @@
-.header {
+/* TODO: move to footer.css */
+footer {
   display: flex;
   align-items: center;
   padding: 0 2rem;
@@ -6,7 +7,7 @@
   height: 3rem;
 }
 
-.header__list {
+.footer__list {
   display: flex;
   align-items: center;
   list-style: none;
@@ -14,14 +15,14 @@
   padding: 0;
 }
 
-.header__list-item {
+.footer__list-item {
   margin-right: 2rem;
 }
 
-.header__list-item > a {
+.footer__list-item > a {
   text-decoration: none;
 }
 
-.header__list-item:last-child {
+.footer__list-item:last-child {
   margin-right: 0;
 }

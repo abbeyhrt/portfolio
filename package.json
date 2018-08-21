@@ -12,6 +12,8 @@
   },
   "dependencies": {
     "gatsby": "^2.0.0-beta.111",
+    "gatsby-source-filesystem": "^1.5.39",
+    "gatsby-transformer-remark": "^1.7.44",
     "prop-types": "^15.6.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2"
