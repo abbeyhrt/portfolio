@@ -1,6 +1,6 @@
 import React from 'react';
 import Page from '../components/Page';
-import { Link, graphql } from 'gatsby';
+import { Link } from 'gatsby';
 
 export default ({ data }) => {
   return (
@@ -9,30 +9,39 @@ export default ({ data }) => {
         <header>
           <h2>About</h2>
         </header>
-        <article>About...</article>
+        <article>
+          I'm a Web Developer, living and working in Austin, Tx.{' '}
+        </article>
       </section>
       <section>
         <header>
           <h2>Projects</h2>
-          <Link to={data.markdownRemark.fields.slug}>WTF_Bake</Link>
+          <ul className="ul--general">
+            <li className="li--general">
+              <Link to={'/projects/wtf-bake'}>WTF_Bake</Link>
+            </li>
+            <li className="li--general">
+              <Link to={'/projects/keep-up'}>Keep Up</Link>
+            </li>
+          </ul>
         </header>
       </section>
-      <section>
+      {/* <section>
         <header>
           <h2>Writing</h2>
         </header>
         <article>Writing...</article>
-      </section>
+      </section> */}
     </Page>
   );
 };
 
-export const query = graphql`
-  query {
-    markdownRemark {
-      fields {
-        slug
-      }
-    }
-  }
-`;
+// export const query = graphql`
+//   query {
+//     markdownRemark {
+//       fields {
+//         slug
+//       }
+//     }
+//   }
+// `;

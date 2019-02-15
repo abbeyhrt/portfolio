@@ -18,3 +18,11 @@ body {
   max-width: 650px;
   min-height: calc(100vh - 9rem);
 }
+
+.ul--general {
+  list-style-type: none;
+}
+
+.li--general {
+  margin: 10px;
+}

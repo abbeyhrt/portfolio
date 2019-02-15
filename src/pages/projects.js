@@ -1,27 +1,60 @@
 import React from 'react';
 import Page from '../components/Page';
-import { Link, graphql } from 'gatsby';
+import { Link } from 'gatsby';
 
-export default ({ data }) => (
-  <Page>
-    <h1>Projects</h1>
-    <ul>
-      This is what I've done:
-      <li>
-        <Link to={data.markdownRemark.fields.slug}>WTF_Bake</Link>
-      </li>
-      <li>Project</li>
-      <li>Project</li>
-    </ul>
-  </Page>
-);
+export default () => {
+  return (
+    <Page>
+      <h1>Projects</h1>
+      <span>This is what I've done:</span>
+      <ul className="ul--general">
+        <li className="li--general">
+          <Link to="/projects/wtf-bake">WTF Bake</Link>
+        </li>
+      </ul>
 
-export const query = graphql`
-  query {
-    markdownRemark {
-      fields {
-        slug
-      }
-    }
-  }
-`;
+      <span>This is what I'm doing:</span>
+      <ul className="ul--general">
+        <li className="li--general">
+          <Link to="/projects/keep-up">Keep Up</Link>
+        </li>
+      </ul>
+    </Page>
+  );
+};
+
+// export const query = graphql`
+//   {
+//     allMarkdownRemark {
+//       edges {
+//         node {
+//           fields {
+//             slug
+//           }
+
+//           frontmatter {
+//             title
+//             description
+//           }
+//         }
+//       }
+//     }
+//   }
+// `;
+// export default ({ data }) => {
+//   const { edges: projects } = data.allMarkdownRemark;
+
+//   return (
+//     <Page>
+//       <h1>Projects</h1>
+//       <ul>
+//         This is what I've done:
+//         {projects.map(({ node }) => (
+//           <li>
+//             <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
+//           </li>
+//         ))}
+//       </ul>
+//     </Page>
+//   );
+// };
