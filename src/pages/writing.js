@@ -10,9 +10,9 @@ const Writing = () => {
       <div>
         <h1>Writing</h1>
         <span>This is what I've written:</span>
-        <ul className="ul--general">
-          <li>404 oops! No writing found!</li>
-          <li>
+        <ul className="ul__general">
+          <li className="li__general">404 oops! No writing found!</li>
+          <li className="li__general">
             Click <button onClick={() => setState(counter + 1)}>here</button> to
             bug me into actually writing some damn articles!
           </li>

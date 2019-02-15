@@ -7,16 +7,20 @@ export default () => {
     <Page>
       <h1>Projects</h1>
       <span>This is what I've done:</span>
-      <ul className="ul--general">
-        <li className="li--general">
-          <Link to="/projects/wtf-bake">WTF Bake</Link>
+      <ul className="ul__general">
+        <li className="li__general">
+          <Link className="link__general" to="/projects/wtf-bake">
+            WTF Bake
+          </Link>
         </li>
       </ul>
 
       <span>This is what I'm doing:</span>
-      <ul className="ul--general">
-        <li className="li--general">
-          <Link to="/projects/keep-up">Keep Up</Link>
+      <ul className="ul__general">
+        <li className="li__general">
+          <Link className="link__general" to="/projects/keep-up">
+            Keep Up
+          </Link>
         </li>
       </ul>
     </Page>
