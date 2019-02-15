@@ -19,10 +19,18 @@ body {
   min-height: calc(100vh - 9rem);
 }
 
-.ul--general {
+.ul__general {
   list-style-type: none;
 }
 
-.li--general {
+.li__general {
   margin: 10px;
+}
+
+.link__general {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
 }

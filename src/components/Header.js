@@ -15,21 +15,31 @@ import { Link } from 'gatsby';
 const Header = () => (
   <header className="header">
     <div className="header__name">
-      <Link to="/">Abbey Hart</Link>
+      <Link className="link__general" to="/">
+        Abbey Hart
+      </Link>
     </div>
     <nav className="header__nav">
       <ul className="header__list">
         <li className="header__list-item">
-          <Link to="/about">About</Link>
+          <Link className="link__general" to="/about">
+            About
+          </Link>
         </li>
         <li className="header__list-item">
-          <Link to="/projects">Projects</Link>
+          <Link className="link__general" to="/projects">
+            Projects
+          </Link>
         </li>
         <li className="header__list-item">
-          <Link to="/writing">Writing</Link>
+          <Link className="link__general" to="/writing">
+            Writing
+          </Link>
         </li>
         <li className="header__list-item">
-          <Link to="/contact">Contact</Link>
+          <Link className="link__general" to="/contact">
+            Contact
+          </Link>
         </li>
       </ul>
     </nav>

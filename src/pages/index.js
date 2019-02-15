@@ -16,12 +16,16 @@ export default ({ data }) => {
       <section>
         <header>
           <h2>Projects</h2>
-          <ul className="ul--general">
-            <li className="li--general">
-              <Link to={'/projects/wtf-bake'}>WTF_Bake</Link>
+          <ul className="ul__general">
+            <li className="li__general">
+              <Link className="link__general" to={'/projects/wtf-bake'}>
+                WTF_Bake
+              </Link>
             </li>
-            <li className="li--general">
-              <Link to={'/projects/keep-up'}>Keep Up</Link>
+            <li className="li__general">
+              <Link className="link__general" to={'/projects/keep-up'}>
+                Keep Up
+              </Link>
             </li>
           </ul>
         </header>
