@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{201:function(e,l,n){"use strict";n.r(l);var t=n(0),a=n.n(t),i=n(204);l.default=function(){return a.a.createElement(i.a,null,a.a.createElement("div",null,a.a.createElement("h1",null,"Writing"),a.a.createElement("ul",null,"This is what I've written:",a.a.createElement("li",null,"Blog"),a.a.createElement("li",null,"blog"),a.a.createElement("li",null,"blog"))))}}}]);
+//# sourceMappingURL=component---src-pages-writing-js-90f083e96d24e382aff7.js.map
