@@ -9,6 +9,4 @@ The solution to the common problem: who's going to take out the garbage? And oth
 
 [Project](https://keepup.company)
 
-I need to update the SSL certificate so site currently not operational.
-
 Project on [Github](https://github.com/abbeyhrt/keep-up)

@@ -7,8 +7,14 @@ export default () => (
     <div>
       <h1>Contact me</h1>
       <ul className="ul__general">
-        <li>My email is abbhart.work@gmail.com</li>
-        <li>
+        <li className="li__general">
+          <address>
+            <a className="link__general" href="mailto:abbhart.work@gmail.com">
+              Email
+            </a>
+          </address>
+        </li>
+        <li className="li__general">
           <Link
             className="link__general"
             to="www.linkedin.com/in/CS-abbey-hart"
@@ -16,12 +22,12 @@ export default () => (
             LinkedIn
           </Link>
         </li>
-        <li>
+        <li className="li__general">
           <Link className="link__general" to="https://twitter.com/abbeyhrt">
             Twitter
           </Link>
         </li>
-        <li>
+        <li className="li__general">
           <Link
             className="link__general"
             to="https://www.facebook.com/abbey.hart.9"

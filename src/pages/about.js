@@ -4,9 +4,7 @@ import Page from '../components/Page';
 export default () => (
   <Page>
     <section>
-      <header>
-        <h1>About Me</h1>
-      </header>
+      <h1>About Me</h1>
       <article>
         <p>Hi, I'm Abbey Hart!</p>
         <p>
