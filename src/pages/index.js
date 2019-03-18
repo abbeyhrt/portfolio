@@ -9,7 +9,7 @@ export default ({ data }) => {
         <header>
           <h2>About</h2>
         </header>
-        <article>
+        <article className="article__general">
           I'm a Web Developer, living and working in Austin, Tx.{' '}
         </article>
       </section>
