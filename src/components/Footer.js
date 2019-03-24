@@ -1,6 +1,6 @@
-import './Footer.css';
+// import './Footer.css';
 import React from 'react';
-import { Link } from 'gatsby';
+import ExternalLink from './ExternalLink';
 
 const Footer = () => (
   <footer>
@@ -17,22 +17,28 @@ const Footer = () => (
         </a>
       </li>
       <li className="footer__list-item">
-        <Link className="link__general" to="www.linkedin.com/in/CS-abbey-hart">
+        <ExternalLink
+          className="Externallink__general"
+          to="www.linkedin.com/in/CS-abbey-hart"
+        >
           LinkedIn
-        </Link>
+        </ExternalLink>
       </li>
       <li className="footer__list-item">
-        <Link className="link__general" to="https://twitter.com/abbeyhrt">
+        <ExternalLink
+          className="link__general"
+          to="https://twitter.com/abbeyhrt"
+        >
           Twitter
-        </Link>
+        </ExternalLink>
       </li>
       <li className="footer__list-item">
-        <Link
+        <ExternalLink
           className="link__general"
           to="https://www.facebook.com/abbey.hart.9"
         >
           Facebook
-        </Link>
+        </ExternalLink>
       </li>
     </ul>
   </footer>
