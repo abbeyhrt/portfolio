@@ -1,14 +1,14 @@
-import './index.css';
 import React from 'react';
-import Header from './Header';
-import Footer from './Footer';
+import Meta from './Meta';
 
-const Page = ({ children }) => (
-  <>
-    <Header />
-    <div className="content">{children}</div>
-    <Footer />
-  </>
-);
-
-export default Page;
+export default function Page({ children, ...props }) {
+  return (
+    <React.Fragment>
+      <Meta />
+      <a href="#skip-to-content" className="show-on-focus">
+        Skip to content
+      </a>
+      <div {...props}>{children}</div>
+    </React.Fragment>
+  );
+}

@@ -1,4 +1,4 @@
-import './Header.css';
+// import './Header.css';
 
 import React from 'react';
 import { Link } from 'gatsby';
@@ -13,32 +13,25 @@ import { Link } from 'gatsby';
 // .btn__icon--small
 
 const Header = () => (
-  <header className="header">
-    <div className="header__name">
-      <Link className="link__general" to="/">
-        Abbey Hart
-      </Link>
-    </div>
-    <nav className="header__nav">
-      <ul className="header__list">
-        <li className="header__list-item">
-          <Link className="link__general" to="/about">
+  <header className="MarkdownPostHeader">
+    <Link className="MarkdownPostHeader__title" to="/">
+      Abbey Hart
+    </Link>
+    <nav className="MarkdownPostHeader__nav">
+      <ul className="MarkdownPostHeader__links">
+        <li>
+          <Link className="MarkdownPostHeader__link" to="/about">
             About
           </Link>
         </li>
-        <li className="header__list-item">
-          <Link className="link__general" to="/projects">
-            Projects
-          </Link>
-        </li>
-        <li className="header__list-item">
-          <Link className="link__general" to="/writing">
+        <li>
+          <Link className="MarkdownPostHeader__link" to="/writing">
             Writing
           </Link>
         </li>
-        <li className="header__list-item">
-          <Link className="link__general" to="/contact">
-            Contact
+        <li>
+          <Link className="MarkdownPostHeader__link" to="/projects">
+            Projects
           </Link>
         </li>
       </ul>

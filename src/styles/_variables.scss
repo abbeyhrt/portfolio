@@ -1,0 +1,48 @@
+//------------------------------------------------------------------------------
+// CSS Variables
+//------------------------------------------------------------------------------
+:root {
+  /* Typography (type size) */
+  /* Pick a scale from: https://type-scale.com/, popular ones tend to be golden ratio and major/minor third */
+  /* We'll use a major third: */
+  --font-size-01: 1rem;
+  --font-size-02: 18px;
+  --font-size-03: 1.25rem;
+  --font-size-04: 1.563rem;
+  --font-size-05: 1.953rem;
+  --font-size-06: 2.441rem;
+  --font-size-07: 3.052rem;
+
+  --line-height-01: 1.5;
+  --line-height-02: 1.25;
+
+  --text-max-width: 550px;
+
+  /* Layout spacers (0, 2, 4, 8, 16, 20, 24, 32) */
+  --spacing-01: 0;
+  --spacing-02: 0.25rem;
+  --spacing-03: 0.5rem;
+  --spacing-04: 0.75rem;
+  --spacing-05: 1rem;
+  --spacing-06: 1.25rem;
+  --spacing-07: 1.5rem;
+  --spacing-08: 2rem;
+  --spacing-09: 3rem;
+  --spacing-10: 4rem;
+
+  /* Colors, neutral gray, interactive color, text color, hover color */
+  /* Default text color */
+  --text-01: #13171a;
+  --text-02: #697077;
+
+  /* Colors for interaction */
+  --interactive-01: #6e32c9;
+  --interactive-02: #054ada;
+
+  /* Background UI colors */
+  --background-01: #f2f4f8;
+
+  /* Inverse colors */
+  --inverse-01: #ffffff;
+  --inverse-02: #000000;
+}

@@ -1,0 +1,20 @@
+//------------------------------------------------------------------------------
+// Breakpoint
+//------------------------------------------------------------------------------
+$grid-breakpoints: (
+  sm: 320px,
+  md: 640px,
+  lg: 960px,
+);
+
+@mixin breakpoint($name, $min-width: null) {
+  @if $min-width {
+    @media screen and (min-width: $min-width) {
+      @content;
+    }
+  } @else {
+    @media screen and (min-width: map-get($grid-breakpoints, $name)) {
+      @content;
+    }
+  }
+}

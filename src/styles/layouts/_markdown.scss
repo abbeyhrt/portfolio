@@ -1,0 +1,344 @@
+//------------------------------------------------------------------------------
+// Markdown
+//------------------------------------------------------------------------------
+.MarkdownPost {
+  background: var(--background-01);
+  min-height: 100vh;
+}
+
+.MarkdownPost > main {
+  min-height: calc(100vh - 4rem);
+}
+
+.MarkdownPostHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  height: 4rem;
+  background-color: var(--inverse-01);
+}
+
+.MarkdownPostHeader__title {
+  color: var(--text-01);
+  font-size: var(--font-size-03);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.MarkdownPostHeader__links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.MarkdownPostHeader__link {
+  color: var(--text-01);
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.MarkdownPostHeader__link:hover {
+  text-decoration: underline;
+}
+
+.MarkdownPostHeader__links li:last-of-type .MarkdownPostHeader__link {
+  margin-right: 0;
+}
+
+.MarkdownPostDetails {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin: 0 auto;
+  max-width: 550px;
+}
+
+.MarkdownPostDetails__date {
+  color: var(--text-02);
+  font-size: var(--font-size-03);
+}
+
+//------------------------------------------------------------------------------
+// Markdown post styles
+//------------------------------------------------------------------------------
+.MarkdownPost__content {
+  padding-bottom: 3rem;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.MarkdownPost__content img {
+  box-sizing: content-box;
+  max-width: 100%;
+}
+
+.MarkdownPost__content ol,
+.MarkdownPost__content ul {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.MarkdownPost__content ol ol,
+.MarkdownPost__content ul ol {
+  list-style-type: lower-roman;
+}
+
+.MarkdownPost__content ol ol ol,
+.MarkdownPost__content ol ul ol,
+.MarkdownPost__content ul ol ol,
+.MarkdownPost__content ul ul ol {
+  list-style-type: lower-alpha;
+}
+
+.MarkdownPost__content ul,
+.MarkdownPost__content ol {
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.MarkdownPost__content ul ul,
+.MarkdownPost__content ul ol,
+.MarkdownPost__content ol ul,
+.MarkdownPost__content ol ol {
+  margin-bottom: 0;
+}
+
+.MarkdownPost__content ul p,
+.MarkdownPost__content ol p {
+  margin-bottom: 0;
+}
+
+.MarkdownPost__content ul li:first-child {
+  margin-top: 0.25rem;
+}
+
+.MarkdownPost__content li + li {
+  margin-top: 0.5rem;
+}
+
+.MarkdownPost__content blockquote,
+.MarkdownPost__content dl,
+.MarkdownPost__content ol,
+.MarkdownPost__content p,
+.MarkdownPost__content pre,
+.MarkdownPost__content table,
+.MarkdownPost__content ul {
+  margin-bottom: var(--spacing-05);
+  margin-top: 0;
+}
+
+.MarkdownPost__content ol,
+.MarkdownPost__content ul {
+  padding-left: 2em;
+}
+
+.MarkdownPost__content ol ol,
+.MarkdownPost__content ol ul,
+.MarkdownPost__content ul ol,
+.MarkdownPost__content ul ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.MarkdownPost__content h1 {
+  margin-bottom: var(--spacing-07);
+}
+
+.MarkdownPost__content h2 {
+  margin-bottom: var(--spacing-07);
+}
+
+.MarkdownPost__content h3 {
+  margin-bottom: var(--spacing-06);
+}
+
+.MarkdownPost__content h4 {
+  margin-bottom: var(--spacing-06);
+}
+
+.MarkdownPost__content h5 {
+  margin-bottom: var(--spacing-05);
+}
+
+.MarkdownPost__content h6 {
+  margin-bottom: var(--spacing-05);
+}
+
+.MarkdownPost__content blockquote {
+  border-left: 0.25em solid #dfe2e5;
+  color: #6a737d;
+  padding: 0 1em;
+  margin-left: 0;
+}
+
+.MarkdownPost__content blockquote > :first-child {
+  margin-top: 0;
+}
+
+.MarkdownPost__content blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+.MarkdownPost__content hr {
+  width: 100px;
+  height: 2px;
+  background-color: black;
+  margin: var(--spacing-10) auto;
+}
+
+//------------------------------------------------------------------------------
+// PrismJS
+//------------------------------------------------------------------------------
+code[class*='language-'],
+pre[class*='language-'] {
+  color: white;
+  background: none;
+  font-feature-settings: normal;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  margin-bottom: 0;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*='language-'] {
+  overflow: auto;
+  padding: 1em;
+}
+
+pre[class*='language-']::-moz-selection {
+  /* Firefox */
+  background: hsl(207, 4%, 16%);
+}
+
+pre[class*='language-']::selection {
+  /* Safari */
+  background: hsl(207, 4%, 16%);
+}
+
+/* Text Selection colour */
+pre[class*='language-']::-moz-selection,
+pre[class*='language-'] ::-moz-selection {
+  text-shadow: none;
+  background: hsla(0, 0%, 100%, 0.15);
+}
+
+pre[class*='language-']::selection,
+pre[class*='language-'] ::selection {
+  text-shadow: none;
+  background: hsla(0, 0%, 100%, 0.15);
+}
+
+/* Inline code */
+:not(pre) > code[class*='language-'] {
+  border-radius: 0.3em;
+  background: rgb(220, 220, 220);
+  color: var(--text-01);
+  padding: 0.15em 0.2em 0.05em;
+  white-space: normal;
+}
+
+.token.attr-name {
+  color: rgb(173, 219, 103);
+  font-style: italic;
+}
+
+.token.comment {
+  color: rgb(99, 119, 119);
+}
+
+.token.string,
+.token.url {
+  color: rgb(173, 219, 103);
+}
+
+.token.variable {
+  color: rgb(214, 222, 235);
+}
+
+.token.number {
+  color: rgb(247, 140, 108);
+}
+
+.token.builtin,
+.token.char,
+.token.constant,
+.token.function {
+  color: rgb(130, 170, 255);
+}
+
+.token.punctuation {
+  color: rgb(199, 146, 234);
+}
+
+.token.selector,
+.token.doctype {
+  color: rgb(199, 146, 234);
+  font-style: 'italic';
+}
+
+.token.class-name {
+  color: rgb(255, 203, 139);
+}
+
+.token.tag,
+.token.operator,
+.token.keyword {
+  color: #ffa7c4;
+}
+
+.token.boolean {
+  color: rgb(255, 88, 116);
+}
+
+.token.property {
+  color: rgb(128, 203, 196);
+}
+
+.token.namespace {
+  color: rgb(178, 204, 214);
+}
+
+pre[data-line] {
+  padding: 1em 0 1em 3em;
+  position: relative;
+}
+
+.gatsby-highlight-code-line {
+  background-color: hsla(207, 95%, 15%, 1);
+  display: block;
+  margin-right: -1em;
+  margin-left: -1em;
+  padding-right: 1em;
+  padding-left: 0.75em;
+  border-left: 0.25em solid #ffa7c4;
+}
+
+.gatsby-highlight {
+  margin-bottom: 1.75rem;
+  border-radius: 8px;
+  background: #011627;
+  -webkit-overflow-scrolling: touch;
+  overflow: auto;
+}
+
+.gatsby-highlight pre[class*='language-'] {
+  float: left;
+  min-width: 100%;
+}
