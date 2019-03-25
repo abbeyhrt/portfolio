@@ -1,26 +1,70 @@
-/* eslint-disable */
-
 import React from 'react';
 import Page from '../components/Page';
+import { Link } from 'gatsby';
+import AboutMe from '../components/AboutMe';
+import Main from '../components/Main';
 
-const Writing = () => {
-  const [counter, setState] = React.useState(0);
+export default ({ data }) => {
   return (
-    <Page>
-      <div>
-        <h1>Writing</h1>
-        <span>This is what I've written:</span>
-        <ul className="ul__general">
-          <li className="li__general">404 oops! No writing found!</li>
-          <li className="li__general">
-            Click <button onClick={() => setState(counter + 1)}>here</button> to
-            bug me into actually writing some damn articles!
-          </li>
-          {counter !== 0 && <p>I've been bugged {counter} times!</p>}
-        </ul>
-      </div>
+    <Page className="Home">
+      <AboutMe />
+      <Main className="Articles">
+        {data.writing.edges.length > 0 && (
+          <section className="ArticleList">
+            <header className="ArticleList__header">
+              <h2 className="ArticleList__header-title">Writing</h2>
+            </header>
+            <ul className="ArticleList__articles">
+              {data.writing.edges.map(({ node }) => (
+                <li key={node.fields.slug}>
+                  <article className="Article">
+                    <header className="Article__header">
+                      <h3 className="Article__title">
+                        <Link to={node.fields.slug}>
+                          {node.frontmatter.title}
+                        </Link>
+                      </h3>
+                      <small className="Article__date">
+                        {node.fields.date} - {node.timeToRead}min
+                      </small>
+                    </header>
+                    <p className="Article__description">
+                      {node.frontmatter.description}
+                    </p>
+                    <footer>
+                      <Link
+                        to={node.fields.slug}
+                        className="Article__read-more"
+                      >
+                        Read more
+                      </Link>
+                    </footer>
+                  </article>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+      </Main>
     </Page>
   );
 };
 
-export default Writing;
+export const query = graphql`
+  {
+    writing: allMarkdownRemark(
+      filter: { fields: { category: { eq: "writing" } } }
+      sort: { fields: [fields___date], order: DESC }
+      limit: 5
+    ) {
+      ...PostData
+      edges {
+        node {
+          fields {
+            date(formatString: "MMMM DD, YYYY")
+          }
+        }
+      }
+    }
+  }
+`;

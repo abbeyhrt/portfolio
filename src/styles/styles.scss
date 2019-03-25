@@ -1,0 +1,163 @@
+@import 'variables';
+@import 'reset';
+@import 'helpers';
+@import 'layout';
+@import 'breakpoint';
+@import 'components/components';
+@import 'layouts/layouts';
+
+/* TODO: Set post styles */
+
+/* TODO: Code highlighting */
+
+/* Page-specific styles */
+
+/* Layout styles */
+
+/* Home Page */
+/* .home {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.sidebar {
+  position: sticky;
+  top: 0;
+  flex: 0 0 33%;
+  height: 100vh;
+  padding: 20vh 1rem 0;
+}
+
+.sidebar::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 75vh;
+  width: 1px;
+  background-color: purple;
+  transform: translateY(12.5vh);
+}
+
+.profile-picture {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background-color: #171717;
+  border-radius: 50%;
+}
+
+ul.contact-me {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li.contact-me__item {
+  margin-right: 1rem;
+}
+
+.content {
+  flex: 0 0 66%;
+  padding: 2rem 1rem;
+}
+
+.recent-post {
+  max-width: 500px;
+}
+
+.recent-post-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--spacing-04);
+}
+
+.recent-post__title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.recent-post__date {
+  font-size: 14px;
+  color: var(--text-02);
+}
+
+.recent-post-summary {
+  margin-bottom: var(--spacing-04);
+  line-height: 1.5;
+}
+
+ul.recent-posts {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul.recent-posts > li {
+  margin-bottom: var(--spacing-08);
+} */
+
+/* h2 {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+img {
+  display: inline-block;
+  width: 48%;
+}
+
+.content {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 650px;
+  min-height: calc(100vh - 9rem);
+}
+
+.article__general {
+  margin: 16px;
+  margin-left: 32px;
+}
+
+.ul__general {
+  padding: 0px;
+  margin: 16px;
+  margin-left: 32px;
+  list-style-type: none;
+}
+
+.link__general {
+  text-decoration: none;
+  color: #2d74da;
+}
+
+.link__general:hover {
+  text-decoration: none;
+  color: #dc267f;
+}
+
+.li__general {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #2d74da;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #dc267f;
+}
+
+address {
+  font-style: normal;
+} */

@@ -6,32 +6,55 @@ module.exports = {
     title: 'Abbey Hart',
     description: 'The portfolio of Abbey Hart',
     siteUrl: 'https://abbeyhrt.github.io/portfolio',
+    social: {
+      twitter: '@abbeyhrt',
+    },
   },
   plugins: [
-    `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              // It's important to specify the maxWidth (in pixels) of
-              // the content container as this plugin uses this as the
-              // base for generating different widths of each image.
-              maxWidth: 260,
-            },
-          },
-        ],
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `src`,
+        name: 'src',
         path: `${__dirname}/content`,
       },
     },
-    `gatsby-transformer-remark`,
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 550,
+              sizeByPixelDensity: true,
+            },
+          },
+          {
+            resolve: 'gatsby-remark-prismjs',
+            options: {
+              inlineCodeMarker: '÷',
+            },
+          },
+          'gatsby-remark-autolink-headers',
+          'gatsby-remark-copy-linked-files',
+          'gatsby-remark-smartypants',
+        ],
+      },
+    },
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
+    'gatsby-plugin-react-helmet',
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        includePaths: ['node_modules'],
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-react-axe',
+      options: {
+        showInProduction: false,
+      },
+    },
   ],
 };
