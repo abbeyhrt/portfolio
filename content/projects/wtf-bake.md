@@ -9,8 +9,8 @@ date: 2018
 What the f\*\*\* should I bake? I love to bake but sometimes I need inspiration for what I should bake. This site solves that problem! Made in Node.js and styled with Sass, this site runs through a list of random baked goods with their recipe site attached.
 
 <div class="post__images">
-  <img class="post__image" src="/images/homeView.png">
-  <img class="post__image" src="/images/recipeView.png">
+  <img class="post__image" src="/portfolio/images/homeView.png">
+  <img class="post__image" src="/portfolio/images/recipeView.png">
 </div>
 
 [Project](https://wtf-bake-buuauiwmmd.now.sh/)
